@@ -1,4 +1,4 @@
-name: Structured Issue
+name: User Story
 description: Create a detailed issue with business + technical fields
 title: "[ISSUE] "
 labels: ["triage"]
