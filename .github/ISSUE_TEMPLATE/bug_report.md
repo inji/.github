@@ -1,52 +1,46 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: bug, triage
-assignees: 
----
+name: Bug Report
+description: Report a bug with required details
+title: "[ISSUE-ID] Short Summary of the Bug"
+labels: ["bug"]
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+body:
 
-**To Reproduce**
-Steps to reproduce the behavior:
+  - type: input
+    id: issue_id
+    attributes:
+      label: Issue ID
+      description: Unique identifier for the issue
+      placeholder: ISSUE-123
+    validations:
+      required: true
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: input
+    id: summary
+    attributes:
+      label: Short Summary of the Bug
+      placeholder: Brief description of the issue
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide detailed description of the issue
+      placeholder: Explain what happened, expected vs actual behavior
+    validations:
+      required: true
 
-**Actual behavior**
-A clear and concise description of what factually occurred.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence & Links
+      description: Add logs, URLs, references, or any supporting evidence
+      placeholder: Logs, links, dashboards, etc.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem. 
-
-**Add the screenshot of the profile page with commit id**
-
-**Smartphone (please complete the following information):**
-
-- Wallet Device: [e.g. iPhone6]
-  - Phone make/model: [e.g. :Vivo Y73]
-  - OS: [e.g. iOS8.1]
-  - BLE version : [e.g. 4.2]
-
-- Verifier Device: [e.g. iPhone6]
-  - Phone make/model: [e.g. :Vivo Y73]
-  - OS: [e.g. iOS8.1]
-  - BLE version : [e.g. 4.2]
-
-- Inji app version: [e.g 0.3.0]
-- Mimoto version: [e.g 1.2.x]
-- MOSIP Version: [e.g. 1.2.1]
-
-**Where does the issue occur: Wallet/Verifier?**
-
-**Logs of wallet and verifier:**
-
-**Additional context**
-Add any other context about the problem here.
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Upload screenshots, logs, or screen recordings (drag & drop supported in GitHub)
+      placeholder: Drag and drop files here or paste images/logs
