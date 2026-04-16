@@ -1,8 +1,9 @@
 name: Bug Report
 description: Report a bug with required details
-title: "[ISSUE-ID] Short Summary of the Bug"
+title: "title"
 labels: ["bug"]
-
+validations:
+  required: true
 body:
 
   - type: input
@@ -25,13 +26,6 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence & Links
+      label: Attachments / Evidence / Links
       description: Add logs, URLs, references, or any supporting evidence
       placeholder: Logs, links, dashboards, etc.
-
-  - type: textarea
-    id: attachments
-    attributes:
-      label: Attachments
-      description: Upload screenshots, logs, or screen recordings (drag & drop supported in GitHub)
-      placeholder: Drag and drop files here or paste images/logs
