@@ -2,8 +2,7 @@ name: Bug Report
 description: Report a bug with required details
 title: "title"
 labels: ["bug"]
-validations:
-  required: true
+
 body:
 
   - type: input
