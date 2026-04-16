@@ -1,15 +1,14 @@
 name: User Story
 description: Create a detailed issue with business + technical fields
-title: "[ISSUE] "
-labels: ["triage"]
+title: "User Story Title "
 
 body:
 
   - type: input
     id: title
     attributes:
-      label: Title
-      placeholder: Short title of the issue
+      label: Description
+      placeholder: Short description of the Story
     validations:
       required: true
 
@@ -26,12 +25,16 @@ body:
     attributes:
       label: Pre-requisites
       description: Any setup or dependencies required
-
+    validations:
+      required: true
+      
   - type: textarea
     id: basic_flow
     attributes:
       label: Basic Flow
       description: Describe the normal flow
+    validations:
+      required: true
 
   - type: textarea
     id: alternate_flows
@@ -60,6 +63,8 @@ body:
     attributes:
       label: Acceptance Criteria
       description: Define when this is considered done
+    validations:
+      required: true
 
   - type: textarea
     id: exceptions
@@ -85,17 +90,13 @@ body:
       label: Compatibility
       placeholder: Browser / OS / API compatibility
 
-  - type: input
-    id: environment
-    attributes:
-      label: Environment
-      placeholder: QA / UAT / Production
-
   - type: textarea
     id: implementation_details
     attributes:
       label: Implementation Details
       description: Technical details / approach
+    validations:
+      required: true
 
   - type: textarea
     id: non_functional
