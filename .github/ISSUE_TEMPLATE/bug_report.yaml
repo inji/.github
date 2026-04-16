@@ -6,15 +6,6 @@ labels: ["bug"]
 body:
 
   - type: input
-    id: issue_id
-    attributes:
-      label: Issue ID
-      description: Unique identifier for the issue
-      placeholder: ISSUE-123
-    validations:
-      required: true
-
-  - type: input
     id: summary
     attributes:
       label: Short Summary of the Bug
