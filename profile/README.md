@@ -175,4 +175,7 @@ All core Inji modules are licensed under the [Mozilla Public License 2.0](https:
 All reference Inji modules are licensed under the [MIT License](https://mit-license.org/). 
 Please look at the individual repositories for the correct license.
 
+## Ownership
+All Inji code is owned and maintained by International Institute of Information Technology, Bangalore, on behalf of Inji.
+
 **Inji — enabling trusted digital credentials, everywhere.**
